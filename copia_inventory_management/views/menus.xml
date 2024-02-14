@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record model="ir.ui.menu" id="stock.menu_warehouse_config">
+        <field name="name">Location Management</field>
+    </record>
+    <record model="ir.ui.menu" id="stock.menu_action_warehouse_form">
+        <field name="name">Location</field>
+    </record>
+      <record model="ir.ui.menu" id="stock.menu_action_location_form">
+        <field name="name">Aisle</field>
+    </record>
+
+      <record model="ir.ui.menu" id="stock.menu_storage_categoty_config">
+        <field name="name">Dimensions Categories</field>
+    </record>
+
+
+     <record model="ir.ui.menu" id="stock.menu_packaging_types">
+        <field name="name">Dimensions And Weights Configuration</field>
+    </record>
+
+</odoo>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+<!--    <record id="stock.action_location_form" model="ir.actions.act_window">-->
+<!--        <field name="name">Aisle</field>-->
+<!--    </record>-->
+
+
+    <record id="stock_location_inherit" model="ir.ui.view">
+        <field name="name">stock.location.inherit</field>
+        <field name="model">stock.location</field>
+        <field name="inherit_id" ref="stock.view_location_form"/>
+        <field name="arch" type="xml">
+<!--            <xpath expr="//label[@for='name']" position="attributes">-->
+<!--                <attribute name="string">Aisle Name</attribute>-->
+<!--            </xpath>-->
+<!--            <xpath expr="//field[@name='location_id']" position="attributes">-->
+<!--                <attribute name="string">Parent Aisle</attribute>-->
+<!--            </xpath>-->
+
+<!--              <xpath expr="//field[@name='storage_category_id']" position="attributes">-->
+<!--                <attribute name="string">Dimension Type</attribute>-->
+<!--            </xpath>-->
+
+            <xpath expr="//field[@name='usage']" position="after">
+
+                     <field name="iscoldstorage"/>
+                     <field name="issecure"/>
+
+
+                     <field name="issegregated"/>
+                      <field name="active"/>
+
+            </xpath>
+
+        </field>
+    </record>
+
+
+<!--    <record id="view_location_tree2_inherit" model="ir.ui.view">-->
+<!--        <field name="name">stock.location.inherit</field>-->
+<!--        <field name="model">stock.location</field>-->
+<!--        <field name="inherit_id" ref="stock.view_location_tree2"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <xpath expr="field[@name='complete_name']" position="attributes">-->
+<!--                <attribute name="string">Aisle</attribute>-->
+<!--            </xpath>-->
+<!--            <xpath expr="field[@name='usage']" position="attributes">-->
+<!--                <attribute name="string">Aisle Type</attribute>-->
+<!--            </xpath>-->
+<!--        </field>-->
+<!--    </record>-->
+
+</odoo>
