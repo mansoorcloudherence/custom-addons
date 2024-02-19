@@ -12,6 +12,7 @@
         'views/stock_warehouse.xml',
         'views/stock_location.xml',
         'views/stock_picking.xml',
+        'views/stock_lot.xml',
     ],
     'license': 'LGPL-3',
 }
